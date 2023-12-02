@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 50px;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Welcome to my portfolio! I am a web developer passionate about creating awesome projects...</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+        <!-- Add more project details -->
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+        <!-- Add more project details -->
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <!-- Add more skills -->
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: example@example.com</p>
+      <p>LinkedIn: linkedin.com/yourprofile</p>
+      <!-- Add more contact information -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Portfolio</p>
+  </footer>
 
-    <main>
-        <section id="home">
-            <!-- Introduction section -->
-            <div class="intro">
-                <h1>Your Name</h1>
-                <p>Web Developer</p>
-                <p>Welcome to my portfolio!</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <!-- Projects section -->
-            <div class="projects">
-                <h2>Projects</h2>
-                <!-- Your projects content -->
-            </div>
-        </section>
-
-        <section id="skills">
-            <!-- Skills section -->
-            <div class="skills">
-                <h2>Skills</h2>
-                <!-- Your skills content -->
-            </div>
-        </section>
-
-        <section id="contact">
-            <!-- Contact section -->
-            <div class="contact">
-                <h2>Contact</h2>
-                <!-- Your contact information -->
-            </div>
-        </section>
-    </main>
-
-    <script src="app.js"></script>
+  <script>
+    const navLinks = document.querySelectorAll('header nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
-
 </html>
