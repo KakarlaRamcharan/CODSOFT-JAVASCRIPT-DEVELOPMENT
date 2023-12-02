@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <!-- Introduction section -->
+            <div class="intro">
+                <h1>Your Name</h1>
+                <p>Web Developer</p>
+                <p>Welcome to my portfolio!</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <!-- Projects section -->
+            <div class="projects">
+                <h2>Projects</h2>
+                <!-- Your projects content -->
+            </div>
+        </section>
+
+        <section id="skills">
+            <!-- Skills section -->
+            <div class="skills">
+                <h2>Skills</h2>
+                <!-- Your skills content -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <!-- Contact section -->
+            <div class="contact">
+                <h2>Contact</h2>
+                <!-- Your contact information -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
